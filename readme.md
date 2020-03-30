@@ -1,7 +1,7 @@
 # Личный проект «Типотека» [![Build status][travis-image]][travis-url]
 
 * Студент: [Lena Fedosikhina](https://up.htmlacademy.ru/nodejs/3/user/167302).
-* Наставник: `Неизвестно`.
+* Наставник: `Вадим Осюков`.
 
 ---
 
