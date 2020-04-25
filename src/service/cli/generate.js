@@ -8,15 +8,15 @@ const {titles, categories, text, fileName, maxCount, defaultCount, warning, Exit
 
 const getMaxRandom = (min, max) => getRandomInt(min, max);
 const getAttribute = (attributes, min, max) => {
-  return shuffle(attributes).slice(min, max).join(` `);
+  return shuffle(attributes).slice(min, max);
 };
 
 const generateDescription = (count) => (
   Array(count).fill({}).map(() => ({
     title: titles[getRandomInt(0, titles.length - 1)],
     createdDate: getRandomDate(),
-    announce: getAttribute(text, 0, 5),
-    fullText: getAttribute(text, 0, getMaxRandom(1, text.length)),
+    announce: getAttribute(text, 0, 5).join(` `),
+    fullText: getAttribute(text, 0, getMaxRandom(1, text.length)).join(` `),
     сategory: getAttribute(categories, 0, getMaxRandom(1, categories.length)),
   }))
 );
